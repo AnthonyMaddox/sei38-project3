@@ -4,6 +4,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
 .exlore-title {
   margin: -80px -40px 0px 15px;
   color: whitesmoke;
@@ -34,6 +38,7 @@ body {
   color: whitesmoke;
   display: block;
   transition: 0.3s;
+  border-bottom: 2px solid navy;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -41,8 +46,9 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  border-bottom: none;
 }
-span {
+.hambuger-button {
   display: flex;
   justify-content: flex-end;
   font-size: 30px;

@@ -141,11 +141,12 @@ span {
   }
   .exlore-title {
     font-size: 10px;
-    padding: 35px 0 18px 10px;
+    padding: 40px 0 18px 10px;
   }
   .sidenav a {
     font-size: 12px;
     padding-left: 3px;
     line-height: 12px;
+
   }
 }

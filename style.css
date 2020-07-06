@@ -6,6 +6,9 @@ body {
   background-size: auto;
   background-position: top;
 }
+.nasa-link {
+   text-decoration: none;
+}
 span {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30px;
@@ -107,10 +110,7 @@ span {
     padding: 35px 0 25px 10px;
   }
   span {
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 20px;
-    border-top: 2px dotted navy;
-    border-bottom: 2px dotted navy;
   }
   .sidenav a {
     font-size: 16px;
@@ -123,10 +123,14 @@ span {
 }
 @media screen and (max-width: 446px) {
   #rover-page-link {
-    margin: 10px;
+    margin: 11px;
     font-size: 8px;
     text-align: left;
   }
+  .exlore-title {
+   font-size: 10px;
+   padding: 35px 0 25px 10px;
+ }
   .sidenav a {
     font-size: 12px;
     padding-left: 10px;

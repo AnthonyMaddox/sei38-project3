@@ -1,9 +1,13 @@
+//let hButton = document.querySelector(".hamburger-button");
+//hButton.addEventListener("click", openNav);
+
 function openNav() {
   document.querySelector("#mySidenav").style.width = "21%";
 }
-
+let closeButton = document.querySelector("#mySidenav");
+closeButton.addEventListener("click", closeNav);
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.querySelector("#mySidenav").style.width = "0";
 }
 
 //fwxUMVRWEwEB4QSXOKgUuUJcvg6CG3dk8B108l1W

@@ -55,6 +55,7 @@ span {
   font-size: 36px;
   margin-left: 50px;
   border-bottom: none;
+  padding-top: 20px;
 }
 .hambuger-button {
   display: flex;
@@ -140,7 +141,7 @@ span {
   }
   .exlore-title {
     font-size: 10px;
-    padding: 35px 0 25px 10px;
+    padding: 35px 0 18px 10px;
   }
   .sidenav a {
     font-size: 12px;

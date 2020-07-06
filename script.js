@@ -58,6 +58,7 @@ RHAZ.addEventListener("click", function (e) {
     .then((RHAZres) => RHAZres.json())
     .then((RHAZres) => {
       console.log(RHAZres);
+      image.style.display = "block";
       image.src = RHAZres.photos[Math.floor(Math.random() * 2)].img_src;
     })
     .catch((err) => console.log("something went wrong", err));
@@ -71,6 +72,7 @@ MAST.addEventListener("click", function (e) {
     .then((MASTres) => MASTres.json())
     .then((MASTres) => {
       console.log(MASTres);
+      image.style.display = "block";
       image.src = MASTres.photos[Math.floor(Math.random() * 836)].img_src;
     })
     .catch((err) => console.log("something went wrong", err));
@@ -84,6 +86,7 @@ NAVCAM.addEventListener("click", function (e) {
     .then((NAVCAMres) => NAVCAMres.json())
     .then((NAVCAMres) => {
       console.log(NAVCAMres);
+      image.style.display = "block";
       image.src = NAVCAMres.photos[Math.floor(Math.random() * 10)].img_src;
     })
     .catch((err) => console.log("something went wrong", err));

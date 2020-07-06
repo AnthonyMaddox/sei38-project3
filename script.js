@@ -1,5 +1,5 @@
 function openNav() {
-  document.querySelector("#mySidenav").style.width = "170px";
+  document.querySelector("#mySidenav").style.width = "21%";
 }
 
 function closeNav() {
@@ -12,10 +12,21 @@ function closeNav() {
 //trefle
 //L0xBODJtQjhIeUZYSi9tUW1oNDI1Zz09
 
+let body = document.querySelector("body");
+//body background image fetch
+/*const res = "https://api.nasa.gov/planetary/apod?api_key=fwxUMVRWEwEB4QSXOKgUuUJcvg6CG3dk8B108l1W";
+fetch(res)
+  .then((res) => res.json())
+  .then((res) => {
+    console.log(res);
+    document.body.style.backgroundImage = `url(${res.url})`;
+  })
+  .catch((err) => console.log("something went wrong", err));
+  */
+
 const FHAZres =
   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=fwxUMVRWEwEB4QSXOKgUuUJcvg6CG3dk8B108l1W";
 let image = document.querySelector(".picture-image");
-let body = document.querySelector("body");
 let FHAZ = document.querySelector(".FHAZ");
 FHAZ.addEventListener("click", function (e) {
   e.preventDefault();
@@ -49,7 +60,7 @@ MAST.addEventListener("click", function (e) {
     .then((MASTres) => MASTres.json())
     .then((MASTres) => {
       console.log(MASTres);
-        image.src = MASTres.photos[Math.floor(Math.random() * 836)].img_src;
+      image.src = MASTres.photos[Math.floor(Math.random() * 836)].img_src;
     })
     .catch((err) => console.log("something went wrong", err));
 });

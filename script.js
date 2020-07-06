@@ -73,7 +73,7 @@ MAST.addEventListener("click", function (e) {
     .then((MASTres) => {
       console.log(MASTres);
       image.style.display = "block";
-      image.src = MASTres.photos[Math.floor(Math.random() * 836)].img_src;
+      image.src = MASTres.photos[Math.floor(Math.random() * 838)].img_src;
     })
     .catch((err) => console.log("something went wrong", err));
 });

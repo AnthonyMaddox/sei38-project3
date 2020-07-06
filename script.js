@@ -1,8 +1,9 @@
 //let hButton = document.querySelector(".hamburger-button");
-//hButton.addEventListener("click", openNav);
+//hButton.addEventListener("click", openNav);(didn't work)
 
+//open side nav and close side nav functions
 function openNav() {
-  document.querySelector("#mySidenav").style.width = "21%";
+  document.querySelector("#mySidenav").style.width = "23%";
 }
 let closeButton = document.querySelector("#mySidenav");
 closeButton.addEventListener("click", closeNav);
@@ -10,14 +11,17 @@ function closeNav() {
   document.querySelector("#mySidenav").style.width = "0";
 }
 
+//nasa
 //fwxUMVRWEwEB4QSXOKgUuUJcvg6CG3dk8B108l1W
 //https://api.nasa.gov/planetary/apod
 
 //trefle
 //L0xBODJtQjhIeUZYSi9tUW1oNDI1Zz09
+//(trefle not working)
+
+//body background image fetch of the nasa picture of the day api:
 
 let body = document.querySelector("body");
-//body background image fetch
 /*const res = "https://api.nasa.gov/planetary/apod?api_key=fwxUMVRWEwEB4QSXOKgUuUJcvg6CG3dk8B108l1W";
 fetch(res)
   .then((res) => res.json())
@@ -27,6 +31,8 @@ fetch(res)
   })
   .catch((err) => console.log("something went wrong", err));
   */
+
+//rover cam fetch data:
 
 const FHAZres =
   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=fwxUMVRWEwEB4QSXOKgUuUJcvg6CG3dk8B108l1W";
@@ -38,6 +44,7 @@ FHAZ.addEventListener("click", function (e) {
     .then((FHAZres) => FHAZres.json())
     .then((FHAZres) => {
       console.log(FHAZres);
+      image.style.display = "block";
       image.src = FHAZres.photos[Math.floor(Math.random() * 2)].img_src;
     })
     .catch((err) => console.log("something went wrong", err));

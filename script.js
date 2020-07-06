@@ -3,7 +3,7 @@
 
 //open side nav and close side nav functions
 function openNav() {
-  document.querySelector("#mySidenav").style.width = "23%";
+  document.querySelector("#mySidenav").style.width = "21%";
 }
 let closeButton = document.querySelector("#mySidenav");
 closeButton.addEventListener("click", closeNav);
